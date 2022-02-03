@@ -16,10 +16,11 @@ body {
 }
 .header {
     grid-area: cabeza;
-    background-color: rgb(7, 7, 180);
-    color: rgb(221, 221, 235);
+    
+    color: black;
     padding: 10px;
     text-align: center;
+    background-image: linear-gradient(orange, yellow);
 }
 /*logo*/
 h1 {
@@ -60,6 +61,10 @@ img {
 }
 .imagenes {
     grid-area: imagenes;
+    transition: transform .2s;
+}
+.imagenes:hover{
+    transform: scale(0.5);
 }
 
 /*texto*/
@@ -89,7 +94,9 @@ footer {
     color: rgb(0, 98, 255);
     text-align: center;
 }
+/*FIN DE ESTILOS GENERALES*/
 
+/*inicio*/
 /*MOBILE*/
 @media (max-width: 480px) {
     body {
@@ -106,6 +113,9 @@ footer {
         justify-content: center;
         align-items: center;
         margin-left: 60px;
+    }
+    h3 {
+        text-align: center;
     }
 /*grid areas*/
 #gridAreas {
@@ -208,6 +218,10 @@ footer {
 .redesFlex {
     display: block;
     
+}
+/*TRANSFORMACIONES*/
+.mover {
+    transform: translateX(450px);/* Eje X, Eje Y */
 }
 }
 
@@ -409,4 +423,22 @@ text area {
     width: 300;
 }
 }
+/*ANIMACIONES*/
+.tituloAnimado {
+    animation-name: titulo;
+    animation-iteration-count: 1;/* repeticion*/
+    animation-duration: 4s;
+}
+
+@keyframes titulo {
+    from/* inicio */{
+        transform: translate(-200px);
+        opacity: 0;
+    }
+    to /* final */{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
 
