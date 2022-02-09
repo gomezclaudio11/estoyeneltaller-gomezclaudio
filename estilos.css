@@ -12,7 +12,7 @@ title {
 }
 
 body {
-    background-color: rgb(230, 242, 247);
+    background-color: rgb(255, 255, 255);
 }
 .header {
     grid-area: cabeza;
@@ -61,11 +61,8 @@ img {
 }
 .imagenes {
     grid-area: imagenes;
-    transition: transform .2s;
 }
-.imagenes:hover{
-    transform: scale(0.5);
-}
+
 
 /*texto*/
 article { font-size: medium;
@@ -86,6 +83,10 @@ input {
 /*redes*/
 aside {
     grid-area: redes;
+    padding: 20px;
+}
+svg {
+    padding: 5px;
 }
 /*footer*/
 footer {
