@@ -15,41 +15,30 @@ body {
     background-color: rgb(255, 255, 255);
 }
 .header {
-    grid-area: cabeza;
-    
     color: black;
     padding: 10px;
     text-align: center;
-    background-image: linear-gradient(orange, yellow);
+    background-color: rgb(255, 255, 255);
 }
-/*logo*/
-h1 {
-    grid-area: logo;
+.colorFondo {
+    background-color: rgb(255, 255, 255) ;
 }
+
 /*menu*/
 main {
     padding: 10px;
     margin: 5px;
 }
 li {
-    grid-area: menu;
-    color: rgb(0, 98, 255);
     padding: 25px;
     height: 10px;
-    display: inline;    
     margin: 15px;
     text-align: center;
     border-radius: 2px;
 }
-li:hover {
-    background-color: white;
-    color: rgb(24, 47, 179);
-}
-
 /*galeriaImagenes*/
 h3{
     text-align: left;
-    color: rgb(60, 60, 180);
     padding: 10px;
 }
 h1 {
@@ -59,15 +48,12 @@ h1 {
 img {
     padding: 10px;
 }
-.imagenes {
-    grid-area: imagenes;
-}
-
-
 /*texto*/
-article { font-size: medium;
-    background-color: aliceblue;
+article { 
+    font-size: medium;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
+    text-align: justify;
 }
 /*formularios*/
 form {
@@ -82,7 +68,6 @@ input {
 }
 /*redes*/
 aside {
-    grid-area: redes;
     padding: 20px;
 }
 svg {
@@ -90,10 +75,12 @@ svg {
 }
 /*footer*/
 footer {
-    grid-area: pie;
-    background-color: white;
-    color: rgb(0, 98, 255);
+    background-color: rgb(255, 255, 255);
     text-align: center;
+}
+.tituloSobreMi {
+    text-decoration-line: overline;
+    padding-top: 20PX;
 }
 /*FIN DE ESTILOS GENERALES*/
 
@@ -113,40 +100,11 @@ footer {
     section {
         justify-content: center;
         align-items: center;
-        margin-left: 60px;
-    }
+        }
     h3 {
         text-align: center;
     }
-/*grid areas*/
-#gridAreas {
-    display: grid;
-    grid-template-areas: 
-    /*1 columna 6 filas*/
-    "cabeza"
-    "logo"
-    "menu"
-    "imagenes"
-    "redes"
-    "pie";
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
-    grid-row-gap: 0;
 }
-/*flex*/
-.menuFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.redesFlex {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    flex-flow: row nowrap;
-}
-}
-
 /*TABLET*/
 @media (min-width: 481px) and (max-width: 1023px) {
     body {
@@ -165,27 +123,8 @@ footer {
         margin-top: 20px;
         justify-content: center;
         align-items: center;
-        margin-left: 60px;
+        
     }
-#gridAreas {
-    display: grid;
-    grid-template-areas: 
-    /*3 COLUMNAS 4 FILAS*/
-    "cabeza cabeza cabeza"
-    "logo logo logo"
-    "menu imagenes redes"
-    "pie pie pie";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
-}
-.menuFlex {
-    display: flex;
-    flex-direction: column;
-}
-.redesFlex {
-    display: block;
-    flex-direction: column;
-}
 }
 
 /* DESKTOP */
@@ -200,36 +139,9 @@ footer {
     section {
         margin: 10px;
     }
-
-#gridAreas {
-    display: grid;
-    grid-template-areas: 
-    /*2columnas 3 filas*/
-    "logo cabeza cabeza"
-    "menu imagenes redes"
-    "pie pie pie"
-    ;
-    grid-template-columns: 20% 70% 10%;
-    grid-template-rows: 1fr 2fr 1fr;
-}
-.menuFlex {
-    display: flex;
-    flex-direction: column;
-    }
-.redesFlex {
-    display: block;
-    
-}
-/*TRANSFORMACIONES*/
-.mover {
-    transform: translateX(450px);/* Eje X, Eje Y */
-}
 }
 
 /*SOBRE MI*/
-article {
-    grid-area: texto;
-}
 h4{
     grid-area: foto;
 }
@@ -238,44 +150,12 @@ h4{
     body {
         height: 100vh;
     }
-    #gridAreas1 {
-    grid-template-areas: 
-    /*1columna 6 filas*/ 
-    "cabeza"
-    "logo"
-    "menu"
-    "texto"
-    "foto"
-    "pie";
-}
-.menuFlex1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-}
 }
 /*tablet*/
 @media (min-width: 481px) and (max-width: 1023px) {
     body {
         height: 100vh;
     }
-    #gridAreas1 {
-        display: grid;
-        grid-template-areas: 
-        /*2 columnas 5filas*/
-        "cabeza cabeza"
-        "logo menu"
-        "texto texto"
-        "foto foto"
-        "pie pie"
-        ;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
-}
-.menuFlex1 {
-    display: flex;
-    flex-flow: row;
-}
 }
 /*desktop*/
 @media (min-width: 1024px){
@@ -286,85 +166,28 @@ h4{
         margin: 10px;
         padding: 20px;
     }
-
-    #gridAreas1 {
-        display: grid;
-        grid-template-areas:
-        /*2 columnas 5filas*/ 
-        "cabeza cabeza"
-        "logo menu"
-        "texto texto"
-        "foto foto"
-        "pie pie"
-        ;
-    }
-    .menuFlex {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 /*PROYECTOS*/
 /*mobile*/
-article {
-    grid-area: texto;
-}
-h5 {
-    grid-area: imagenes;
-}
 @media (max-width: 480px) {
     body {
         height: 100vh;
     }
-#girdAreas2 {
-    display: grid;
-    grid-template-areas: 
-    /*1 columna 6filas*/
-    "cabeza"
-    "logo"
-    "menu"
-    "texto"
-    "foto"
-    "pie";
-}
 }
 /*tablet*/
 @media (min-width: 481px) and (max-width: 1023px) {
     body {
         height: 100vh;
     }
-    #gridAreas2 {
-        display: grid;
-        grid-template-areas:
-        /*2 columnas 5filas*/ 
-        "cabeza cabeza"
-        "logo menu"
-        "texto texto"
-        "imagenes imagenes"
-        "pie pie";
-    }
-}
+   }
 /*desktop*/
 @media (min-width: 1024px){
     body {
         height: 100vh;
     }
-    #gridAreas2 {
-        display: grid;
-        grid-template-areas: 
-        /*2 columnas 5filas*/
-        "cabeza cabeza"
-        "logo menu"
-        "texto texto"
-        "imagenes imagenes"
-        "pie pie"
-        ;
-    }
 }
 /*CONTACTO*/
-form {
-    grid-area: formulario;
-    }
 legend {
 text-align: center;
 }
@@ -374,55 +197,18 @@ text-align: center;
     body {
         height: 100vh;
     }
-#girdAreas3 {
-    display: grid;
-    grid-template-areas:
-    "cabeza"
-    "logo"
-    "menu"
-    "formulario"
-    "pie"
-    ;
-}
-.menuFlex3 {
-    display: flex;
-    flex-direction: column;
-}
 }
 /*tablet*/
 @media (min-width: 481px) and (max-width: 1023px) {
     body {
         height: 100vh;
     }
-    #girdAreas3 {
-        display: grid;
-        grid-template-areas:
-        "cabeza cabeza"
-        "logo menu"
-        "formulario formulario"
-        "pie pie"
-        ;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 1fr 1fr 2fr 1fr;
-    }
-}
+  }
 /*desktop*/
 @media (min-width: 1024px){
     body {
         height: 100vh;
     }
-    #gridAreas3 {
-        display: grid;
-        grid-template-areas: 
-        "cabeza cabeza"
-        "logo menu"
-        "formulario formulario"
-        "pie pie"
-        ;
-    }
-text area {
-    width: 300;
-}
 }
 /*ANIMACIONES*/
 .tituloAnimado {
