@@ -1,0 +1,79 @@
+/*estructura*/
+
+title {
+    font-size: x-large;
+}
+
+body {
+    background-color: $color;
+}
+.header {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    background-color: $color;
+}
+.colorFondo {
+    background-color: $color ;
+}
+
+/*menu*/
+li {
+    padding: 25px;
+    height: 10px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 2px;
+    a{
+        text-decoration: none;
+        &:hover {
+        background-color: rgb(221, 219, 219);
+    }
+}
+}
+/*galeriaImagenes*/
+h3{
+    text-align: left;
+    padding: 10px;
+}
+h1 {
+    border: white ;
+    border: 10px;
+}
+img {
+    padding: 10px;
+}
+/*texto*/
+article { 
+    font-size: medium;
+    background-color: $color;
+    padding: 20px;
+    text-align: justify;
+}
+/*formularios*/
+form {
+    padding: 20px;
+    border: 15px;
+    margin: 20px;
+    
+}
+input {
+    padding: 5px;
+    margin: 5px;
+}
+/*redes*/
+aside {
+    padding: 20px;
+}
+svg {
+    padding: 5px;
+}
+/*footer*/
+footer {
+    background-color: $color;
+    text-align: center;
+}
+.tituloSobreMi {
+    text-decoration-line: overline;
+    padding-top: 20PX;
+}

@@ -1,0 +1,17 @@
+/*ANIMACIONES*/
+.tituloAnimado {
+    animation-name: titulo;
+    animation-iteration-count: 1;/* repeticion*/
+    animation-duration: 4s;
+}
+
+@keyframes titulo {
+    from/* inicio */{
+        transform: translate(-200px);
+        opacity: 0;
+    }
+    to /* final */{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
