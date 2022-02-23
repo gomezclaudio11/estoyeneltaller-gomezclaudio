@@ -85,7 +85,7 @@ footer {
   text-align: center;
 }
 
-.tituloSobreMi {
+.tituloSobreMi, .tituloSobreMi-2 {
   text-decoration-line: overline;
   padding-top: 20PX;
 }
@@ -251,6 +251,41 @@ legend {
     transform: translate(0);
     opacity: 1;
   }
+}
+/* MAPS*/
+.btn-inicio {
+  background-color: #55acee;
+  border: #55acee;
+}
+
+.btn-sobremi {
+  background-color: #3a5795;
+  border: #3a5795;
+}
+
+.btn-proyectos {
+  background-color: #C25E30;
+  border: #C25E30;
+}
+
+.btn-contactos {
+  background-color: #8f348f;
+  border: #8f348f;
+}
+
+/*EXTEND*/
+.tituloSobreMi, .tituloSobreMi-2 {
+  text-decoration-line: overline;
+  padding-top: 20PX;
+}
+
+.tituloSobreMi-2 {
+  color: #C25E30;
+}
+
+/* MIXINS*/
+body {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=destino.css.map */
