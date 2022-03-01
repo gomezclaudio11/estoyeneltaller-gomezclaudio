@@ -12,13 +12,10 @@
     li {
        padding: 28px;
     }
-    section {
-        justify-content: center;
-        align-items: center;
-        }
     h3 {
         text-align: center;
     }
+    
 }
 /*TABLET*/
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -34,12 +31,6 @@
         padding: 28px;
         width: 160px;
      }
-    section {
-        margin-top: 20px;
-        justify-content: center;
-        align-items: center;
-        
-    }
 }
 
 /* DESKTOP */
@@ -50,9 +41,6 @@
     h1 {
         padding-top: 10px;
         margin: 0 auto;        
-    }
-    section {
-        margin: 10px;
     }
 }
 

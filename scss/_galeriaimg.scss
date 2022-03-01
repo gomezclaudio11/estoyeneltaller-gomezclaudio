@@ -1,0 +1,79 @@
+
+
+.gallery {
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 160px;
+    grid-template-areas: 
+    "img1 img1 img2 img2"
+    "img1 img1 img2 img2"
+    "img3 img4 img5 img5"
+    "img3 img4 img6 img6";    
+    gap: .8em;
+}
+
+.gallery_picture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.gallery_picture::before {
+    content: "TRABAJOS ARTESANALES";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    transition: transform .4s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.gallery_picture:hover::before {
+    transform: scaleY(1) ;
+}
+
+.gallery_picture_g1 {
+    grid-area: img1;
+}
+.gallery_picture_g2 {
+    grid-area: img2;
+}
+.gallery_picture_g3 {
+    grid-area: img3;
+}
+.gallery_picture_g4 {
+    grid-area: img4;
+}
+.gallery_picture_g5 {
+    grid-area: img5;
+}
+.gallery_picture_g6 {
+    grid-area: img6;
+}
+.gallery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 480px) {
+    .gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img1 img1"
+    "img1 img1"
+    "img2 img3"
+    "img4 img5"
+    "img6 img6"
+    "img6 img6"
+    ;
+
+    }
+}
+

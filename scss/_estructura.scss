@@ -6,6 +6,7 @@ title {
 
 body {
     background-color: $color;
+    font-family: sans-serif;
 }
 .header {
     color: black;
@@ -15,6 +16,13 @@ body {
 }
 .colorFondo {
     background-color: $color ;
+}
+
+
+h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: black;
 }
 
 /*menu*/
@@ -31,17 +39,22 @@ li {
     }
 }
 }
-/*galeriaImagenes*/
-h3{
-    text-align: left;
-    padding: 10px;
-}
 h1 {
     border: white ;
     border: 10px;
 }
+h3{
+    padding-top: 50px;
+    color: rgb(180, 22, 22);
+}
+section {
+    padding-left: 50px;
+}
+
 img {
     padding: 10px;
+    
+    
 }
 /*texto*/
 article { 
@@ -62,9 +75,6 @@ input {
     margin: 5px;
 }
 /*redes*/
-aside {
-    padding: 20px;
-}
 svg {
     padding: 5px;
 }
