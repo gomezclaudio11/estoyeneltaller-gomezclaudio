@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  color: black;
+  color: #1b63e7;
   padding: 10px;
   text-align: center;
   background-color: white;
@@ -24,7 +24,7 @@ body {
 h2 {
   padding-top: 40px;
   padding-bottom: 40px;
-  color: black;
+  color: #1b63e7;
 }
 
 /*menu*/
@@ -50,10 +50,6 @@ h1 {
 h3 {
   padding-top: 50px;
   color: #b41616;
-}
-
-section {
-  padding-left: 50px;
 }
 
 img {
@@ -96,6 +92,15 @@ footer {
   padding-top: 20PX;
 }
 
+/*contacto*/
+.bodyContacto {
+  background-image: url(/img/contacto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
 /*reset*/
 /*estilos generales*/
 * {
@@ -119,8 +124,12 @@ footer {
     margin: 0 auto;
   }
 
-  li {
-    padding: 28px;
+  h2 {
+    padding-left: 10px;
+  }
+
+  h3 {
+    padding-left: 10px;
   }
 
   h3 {
@@ -143,6 +152,10 @@ footer {
     padding: 28px;
     width: 160px;
   }
+
+  section img {
+    width: 500px;
+  }
 }
 /* DESKTOP */
 @media (min-width: 1024px) {
@@ -156,10 +169,6 @@ footer {
   }
 }
 /*SOBRE MI*/
-h4 {
-  grid-area: foto;
-}
-
 /*mobile*/
 @media (max-width: 480px) {
   body {
@@ -194,6 +203,10 @@ h4 {
 @media (min-width: 481px) and (max-width: 1023px) {
   body {
     height: 100vh;
+  }
+
+  h2 {
+    padding-left: 10px;
   }
 }
 /*desktop*/
@@ -243,6 +256,10 @@ legend {
     opacity: 1;
   }
 }
+.img:hover {
+  border: 5px solid #f7f7f7;
+}
+
 .gallery {
   padding-bottom: 3rem;
   padding-top: 1rem;
@@ -255,7 +272,6 @@ legend {
 
 .gallery_picture {
   position: relative;
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -266,7 +282,7 @@ legend {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #5b40f3a6;
+  background-color: #4070f3a6;
   transform: scale(0);
   transition: transform 0.4s;
   color: white;

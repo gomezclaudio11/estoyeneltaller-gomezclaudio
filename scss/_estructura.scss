@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
 }
 .header {
-    color: black;
+    color: rgb(27, 99, 231);
     padding: 10px;
     text-align: center;
     background-color: $color;
@@ -22,7 +22,7 @@ body {
 h2 {
     padding-top: 40px;
     padding-bottom: 40px;
-    color: black;
+    color: rgb(27, 99, 231);
 }
 
 /*menu*/
@@ -47,9 +47,7 @@ h3{
     padding-top: 50px;
     color: rgb(180, 22, 22);
 }
-section {
-    padding-left: 50px;
-}
+
 
 img {
     padding: 10px;
@@ -87,4 +85,14 @@ footer {
 .tituloSobreMi {
     text-decoration-line: overline;
     padding-top: 20PX;
+}
+
+/*contacto*/
+.bodyContacto {
+   background-image: url(/img/contacto.jpg) ;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.5;
+  
 }
